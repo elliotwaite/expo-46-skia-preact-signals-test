@@ -1,0 +1,24 @@
+HOW THIS REPO WAS CREATED:
+
+$ yarn create expo-app  --template
+
+  ✔ Choose a template: › Blank (TypeScript)
+  ✔ What is your app named? … expo-46-skia-preact-signals-test
+
+$ cd expo-46-skia-preact-signals-test
+
+$ npx expo install @expo/webpack-config@^0.17.0
+
+$ expo install @shopify/react-native-skia
+$ yarn setup-skia-web
+
+$ yarn add @preact/signals-react
+
+Update 'App.tsx' to be what it is now.
+Add 'HellowWorld.tsx'
+Add 'skia-web-module.d.ts'
+
+Add 'entry.js' and update package.json to use `"main": "entry.js",` as
+mentioned here: https://github.com/expo/expo/issues/18485#issuecomment-1221353737
+
+$ yarn web
