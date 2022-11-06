@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 import { WithSkiaWeb } from '@shopify/react-native-skia/lib/module/web'
 
-// // If you uncomment these lines you will get an error.
-// import { signal } from '@preact/signals-react'
-// const count = signal(0)
-// console.log('count', count.value)
+// Adding these lines cause an error to occur.
+import { signal } from '@preact/signals-react'
+const count = signal(0)
+console.log('count', count.value)
 
 const CANVASKIT_WASM_VERSION = '0.35.0' // From 'node_modules/canvaskit-wasm/package.json'.
 
